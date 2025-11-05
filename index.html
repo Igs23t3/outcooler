@@ -3,129 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My School Project</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>OutCooler - Termos refrigerantes (MOCKUP)</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
+    <meta name="description" content="OutCooler - Empresa dedicada a crear soluciones avanzadas a problemas tipicos. Descubre nuestro producto principal: el termo OutCooler.">
+    <meta name="keywords" content="tecnologia, outcooler, OutCooler, innovación, termos, refrigerantes, enfriar, agua">
+    <meta name="author" content="OutCooler Team">
 
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-
-        h1 {
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-        }
-
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
-
-        h2 {
-            color: #764ba2;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 5px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .highlight {
-            background: #f0f4ff;
-            padding: 20px;
-            border-left: 4px solid #667eea;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
-            font-size: 0.9em;
-        }
-
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1em;
-            border-radius: 25px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: transform 0.2s;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My School Project</h1>
-        <p class="subtitle">A Simple Webpage Built with HTML & CSS</p>
-
-        <h2>About This Project</h2>
-        <p>
-            This is my first webpage created for a school assignment. I learned how to use HTML for structure, 
-            CSS for styling, and how to deploy it using Git and Netlify. This project helped me understand 
-            the basics of web development and version control.
-        </p>
-
-        <div class="highlight">
-            <strong>Fun Fact:</strong> This entire website is just one HTML file with embedded CSS. 
-            Simple but effective!
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Company Logo" width="200px" height="100px">
+                </div>
+                <nav class="nav">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre Nosotros</a>
+                    <a href="#products">Productos</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+            </div>
         </div>
+    </header>
 
-        <h2>What I Learned</h2>
-        <p>
-            Through this project, I discovered how web technologies work together. HTML provides the structure 
-            and content, while CSS makes everything look good. I also learned about Git for version control 
-            and Netlify for hosting, which are tools that professional developers use every day.
-        </p>
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&h=900&fit=crop');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Conoce el termo OutCooler</h2>
+                        <p>Descubrí como funciona nuestro producto estrella y como podes conseguir uno vos también.</p>
+                        <a href="#products" class="btn">Ver productos</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Technologies Used</h2>
-        <p>
-            <strong>HTML5</strong> - For the structure and content<br>
-            <strong>CSS3</strong> - For styling and making it look pretty<br>
-            <strong>Git</strong> - For version control<br>
-            <strong>Netlify</strong> - For hosting the website online
-        </p>
+            <div class="slide">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=900&fit=crop');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Encontra un local cercano que venda OutCoolers</h2>
+                        <p>Tu mejor decisión puede estar a la vuelta de la esquina.</p>
+                        <a href="#about" class="btn">Ver</a>
+                    </div>
+                </div>
+            </div>
 
-        <button onclick="alert('Thanks for visiting my website!')">Click Me!</button>
+            <div class="slide">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=900&fit=crop');"></div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Contactanos</h2>
+                        <p>Escribinos por nuestra pagina o por nuestras redes.</p>
+                        <a href="#contact" class="btn">Ver</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="footer">
-            Created with 💜 for my school project | 2025
+            <!-- Navigation Arrows -->
+            <button class="slider-arrow prev" onclick="changeSlide(-1)"></button>
+            <button class="slider-arrow next" onclick="changeSlide(1)"></button>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>¿Quienes somos?</h3>
+                    <p>OutCooler es un proyecto de empresa dedicada a dar soluciones innovadoras que fomenten habitos saludables con herramientas tecnologicas. Aunque no tengamos experiencia lo compensamos con nuestro equipo dedicado y apasionado.</p>
+                    <p>Nuestra misión actual es ayudar a nuestro clientes a poder hidratarse donde quieran y como quieran con la ayuda de nuesto producto.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Clientes actualmente</p>
+                    </div>
+                    <div class="stat">
+                        <h3>80+</h3>
+                        <p>Empleados</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Locales adheridos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product1.png" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>OutCooler Modelo Clasico</h3>
+                        <p>Enfría tus bebidas donde quieras con el revolucionario OutCooler.</p>
+                        <span class="price">$79.000</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product2.png" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>OutCooler Modelo Pro</h3>
+                        <p>Enfría y calienta tus bebidas favoritas donde quieras, ahora con un display LED avanzado.</p>
+                        <span class="price">$109.000</span>
+                    </div>
+                </div>
+
+                <div class="product-card coming-soon">
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/free-photo/clean-white-stucco-wall_1194-6945.jpg?semt=ais_hybrid&w=740&q=80" alt="Coming Soon">
+                        <div class="coming-soon-overlay">
+                            <h3>Próximamente</h3>
+                            <p>Seguinos para enterarte de nuestros proximos productos!</p>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Productos Nuevos</h3>
+                        <p>Estamos innovando constantemente para traerte soluciones nuevas a tus problemas del día a día.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactanos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Escribinos</h3>
+                    <p>Tenes preguntas sobre nuestros productos o servicios? Nos encantaria escucharte!</p>
+                    
+                    <div class="info-item">
+                        <strong>📧 Email:</strong>
+                        <p>outcooler@gmail.com</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>📞 Telefono:</strong>
+                        <p>+54 9 11 6848-4265</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <strong>📍 Ubicación:</strong>
+                        <p>123 Calle Siempreviva<br>Argentina, Bajo Flores</p>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 OutCooler. All rights reserved.</p>
+            <p>Proyecto Escolar | Hecho con 💚</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
