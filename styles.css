@@ -566,4 +566,39 @@ html {
     .section-title {
         font-size: 2rem;
     }
+    /* Simple Locations Page Styles */
+.locations-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.locations-intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+#showLocationBtn {
+    margin-bottom: 2rem;
+}
+
+#map-container {
+    margin-top: 2rem;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #25ffcb;
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 400px;
+    }
+}
 }

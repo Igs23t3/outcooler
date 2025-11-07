@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutCooler - Termos refrigerantes (MOCKUP)</title>
+
+    <meta name="description" content="OutCooler - Empresa dedicada a crear soluciones avanzadas a problemas tipicos. Descubre nuestro producto principal: el termo OutCooler.">
+    <meta name="keywords" content="tecnologia, outcooler, OutCooler, innovación, termos, refrigerantes, enfriar, agua">
+    <meta name="author" content="OutCooler Team">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Company Logo" width="200px" height="100px">
+                </div>
+                <nav class="nav">
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre Nosotros</a>
+                    <a href="#products">Productos</a>
+                    <a href="locations.html">Ubicaciones</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Locations Section -->
+    <section class="locations-page">
+        <div class="container">
+            <h1 class="section-title">Tiendas cercanas</h1>
+            <p class="locations-intro">Encontra tiendas cerca de tu ubicación!</p>
+            
+            <div class="location-controls">
+                <button id="showLocationBtn" class="btn">📍 Encontrar tiendas cercanas</button>
+                <button id="showAllBtn" class="btn btn-secondary">🗺️ Mostrar todas las tiendas</button>
+            </div>
+            <br><br>
+            <div id="map-container">
+    <div id="map">
+        <div class="map-placeholder">
+            <div class="placeholder-icon">📍</div>
+            <p>Hace click en el boton para mostrar el mapa!</p>
+        </div>
+    </div>
+    
+</div>
+
+            
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 OutCooler. All rights reserved.</p>
+            <p>Proyecto Escolar | Hecho con 💚</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
